@@ -1,3 +1,38 @@
 \begin{align*}
-	foo
+	V(r,\theta,\phi) = \sum_{l=0}^{\infty} \sum_{m=-l}^l%
+		(A_{lm} r^l + B_{lm} r^{-(l+1)})Y_{lm}(\theta,\phi)
+\end{align*}
+
+\begin{align*}
+	Y_{lm}(\theta, \phi) = \sqrt{\frac{2l+1}{4\pi} \frac{(l-m)!}{(l+m)!}} P_l^m(\cos(\theta)) e^{im\phi}
+\end{align*}
+
+\begin{align*}
+	Y_{l,-m}(\theta, \phi) = (-1)^m \overline{Y_{lm}(\theta, \phi)}
+\end{align*}
+
+\begin{align*}
+	Y_{00}(\theta, \phi) &=%
+		\frac{1}{\sqrt{4\pi}} \\
+	\\
+	Y_{10}(\theta, \phi) &=%
+		\sqrt{\frac{3}{4\pi}} \cos(\theta) \\
+	Y_{11}(\theta, \phi) &=%
+		-\sqrt{\frac{3}{8\pi}} \sin(\theta) e^{i\phi} \\
+	\\
+	Y_{20}(\theta, \phi) &=%
+		\sqrt{\frac{5}{4\pi}} (\tfrac{3}{2}\cos(\theta)^2-\tfrac{1}{2}) \\
+	Y_{21}(\theta, \phi) &=%
+		-\sqrt{\frac{15}{8\pi}} \sin(\theta) \cos(\theta) e^{i\phi} \\
+	Y_{22}(\theta, \phi) &=%
+		\sqrt{\frac{15}{32\pi}} \sin(\theta)^2 e^{2i\phi} \\
+	\\
+	Y_{30}(\theta, \phi) &=%
+		\sqrt{\frac{7}{4\pi}} (\tfrac{5}{2}\cos(\theta)^3-\tfrac{3}{2}\cos(\theta)) \\
+	Y_{31}(\theta, \phi) &=%
+		-\sqrt{\frac{21}{64\pi}} \sin(\theta) (5\cos(\theta)-1) e^{i\phi} \\
+	Y_{32}(\theta, \phi) &=%
+		\sqrt{\frac{105}{32\pi}} \sin(\theta)^2 \cos(\theta) e^{2i\phi} \\
+	Y_{33}(\theta, \phi) &=%
+		-\sqrt{\frac{35}{64\pi}} \sin(\theta)^3 e^{3i\phi} \\
 \end{align*}
