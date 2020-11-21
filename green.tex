@@ -1,7 +1,7 @@
 Generica:
 \begin{align*}
-	V({\bf x}) &= \iiint \rho({\bf x'})G({\bf x},{\bf x'}) d\nu({\bf x'})\\%
-			   &+ \frac{1}{4\pi} \oiint \left(%
+	V({\bf x}) &= \int \rho({\bf x'})G({\bf x},{\bf x'}) d\nu({\bf x'})\\%
+			   &+ \frac{1}{4\pi} \oint \left(%
 		G({\bf x},{\bf x'})\frac{\p V({\bf x'})}{\p n'} - V({\bf x'}) \frac{\p G({\bf x},{\bf x'})}{\p n'}%
 	\right) dS({\bf x'})
 \end{align*}
@@ -9,15 +9,15 @@ Generica:
 Condizioni Dirichlet:
 \begin{align*}
 	&G_D({\bf x},{\bf x'}) = 0 \qquad \text{per } {\bf x'} \in S \\
-	&V({\bf x}) = \iiint \rho({\bf x'})G_D({\bf x},{\bf x'}) d\nu({\bf x'})%
-		- \frac{1}{4\pi} \oiint V({\bf x'}) \frac{\p G_D({\bf x},{\bf x'})}{\p n'} dS({\bf x'})
+	&V({\bf x}) = \int \rho({\bf x'})G_D({\bf x},{\bf x'}) d\nu({\bf x'})%
+		- \frac{1}{4\pi} \oint V({\bf x'}) \frac{\p G_D({\bf x},{\bf x'})}{\p n'} dS({\bf x'})
 \end{align*}
 
 Condizioni Neumann:
 \begin{align*}
 	&\frac{\p G_N({\bf x},{\bf x'})}{\p n'} = - \frac{4\pi}{S} \qquad \text{per } {\bf x'} \in S \\
-	&V({\bf x}) = \langle V \rangle + \iiint \rho({\bf x'})G_N({\bf x},{\bf x'}) d\nu({\bf x'})%
-		+ \frac{1}{4\pi} \oiint G_N({\bf x},{\bf x'})\frac{\p V({\bf x'})}{\p n'} dS({\bf x'})
+	&V({\bf x}) = \langle V \rangle + \int \rho({\bf x'})G_N({\bf x},{\bf x'}) d\nu({\bf x'})%
+		+ \frac{1}{4\pi} \oint G_N({\bf x},{\bf x'})\frac{\p V({\bf x'})}{\p n'} dS({\bf x'})
 \end{align*}
 
 Piano:
@@ -25,5 +25,5 @@ Piano:
 Sfera:
 \begin{align*}
 	G({\bf x}, {\bf x'}) &= \frac{1}{\abs{{\bf x} - {\bf x'}}} - \frac{a}{x'\abs{{{\bf x} - \frac{a^2}{x'^2}{\bf x'}}}} \\
-	\left. \frac{\p G}{\p n'} \right|_{x'=a} &= - \frac{x^2 - a^2}{a(x^2 + a^2 - 2ax\cos \gamma)^{3/2}}
+	\left. \frac{\p G}{\p n'} \right|_{x'=a} &= - \frac{x^2 - a^2}{a(x^2 + a^2 - 2ax\cos(\gamma))^{3/2}}
 \end{align*}
