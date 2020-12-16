@@ -1,6 +1,7 @@
-\documentclass{article}
-\usepackage{amsmath,amssymb,amsfonts,mathtools}
+\documentclass[landscape, 12pt, a4paper]{article}
+\usepackage{amsmath,amssymb,amsfonts,mathtools,multicol,fullpage,pdflscape}
 \usepackage[italian]{babel}
+\usepackage[margin=0.8in]{geometry}
 
 \providecommand{\abs}[1]{\left|#1\right|}
 \providecommand{\norm}[1]{\lVert#1\rVert}
@@ -14,22 +15,26 @@
 
 \begin{document}
 
-\section{Fondamentali}
-\input{fondamentali}
+\begin{multicols}{3}
 
-\section{Potenziale ed Energia}
-\input{potenziale_energia}
+%\section{Fondamentali}
+%\input{fondamentali}
+
+%\section{Potenziale ed Energia}
+%\input{potenziale_energia}
 
 \section{Funzione di Green}
 \input{green}
 
-\section{Laplaciano}
-\input{laplaciano}
+\section{Operatori differenziali}
+\input{operdiff}
 
 \section{Polinomi di Legendre}
 \input{legendre}
 
 \section{Armoniche sferiche}
 \input{armoniche_sferiche}
+
+\end{multicols}
 
 \end{document}

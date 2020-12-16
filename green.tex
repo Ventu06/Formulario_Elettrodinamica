@@ -1,26 +1,28 @@
 Generica:
 \begin{align*}
-	V({\bf x}) &= \int \rho({\bf x'})G({\bf x},{\bf x'}) d\nu({\bf x'})\\%
-			   &+ \frac{1}{4\pi} \oint \left(%
-		G({\bf x},{\bf x'})\frac{\p V({\bf x'})}{\p n'} - V({\bf x'}) \frac{\p G({\bf x},{\bf x'})}{\p n'}%
-	\right) dS({\bf x'})
+	V({\bf x})%
+	&= \int \rho({\bf x'})G({\bf x},{\bf x'}) d\nu({\bf x'})\\%
+	&+ \frac{1}{4\pi} \oint (%
+		G({\bf x},{\bf x'})\frac{\p V({\bf x'})}{\p n'}\\%
+	&- V({\bf x'}) \frac{\p G({\bf x},{\bf x'})}{\p n'}%
+	) dS({\bf x'})
 \end{align*}
 
 Condizioni Dirichlet:
 \begin{align*}
 	&G_D({\bf x},{\bf x'}) = 0 \qquad \text{per } {\bf x'} \in S \\
-	&V({\bf x}) = \int \rho({\bf x'})G_D({\bf x},{\bf x'}) d\nu({\bf x'})%
-		- \frac{1}{4\pi} \oint V({\bf x'}) \frac{\p G_D({\bf x},{\bf x'})}{\p n'} dS({\bf x'})
+	&V({\bf x}) = \int \rho({\bf x'})G_D({\bf x},{\bf x'}) d\nu({\bf x'})\\%
+	&- \frac{1}{4\pi} \oint V({\bf x'}) \frac{\p G_D({\bf x},{\bf x'})}{\p n'} dS({\bf x'})
 \end{align*}
 
 Condizioni Neumann:
 \begin{align*}
 	&\frac{\p G_N({\bf x},{\bf x'})}{\p n'} = - \frac{4\pi}{S} \qquad \text{per } {\bf x'} \in S \\
-	&V({\bf x}) = \langle V \rangle + \int \rho({\bf x'})G_N({\bf x},{\bf x'}) d\nu({\bf x'})%
-		+ \frac{1}{4\pi} \oint G_N({\bf x},{\bf x'})\frac{\p V({\bf x'})}{\p n'} dS({\bf x'})
+	&V({\bf x}) = \langle V \rangle + \int \rho({\bf x'})G_N({\bf x},{\bf x'}) d\nu({\bf x'})\\%
+	&+ \frac{1}{4\pi} \oint G_N({\bf x},{\bf x'})\frac{\p V({\bf x'})}{\p n'} dS({\bf x'})
 \end{align*}
 
-Piano:
+%Piano:
 
 Sfera:
 \begin{align*}
